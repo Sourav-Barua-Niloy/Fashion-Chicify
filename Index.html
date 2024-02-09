@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicify</title>
+    <link rel="icon" type="image/x-icon" href="./Images/icons/logo.png">
+    <!-- CDN tailwid -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/dca7da15d1.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <style>
+        .font-change {
+            font-family: 'Protest Riot', sans-serif;
+        }
+        .model-size {
+            height: 100 rem;
+            width: 120rem;
+        }
+        .icon {
+            height: 10 rem;
+            width: 12rem;
+        }
+    </style>
+</head>
+
+<body class="font-change">
+    <!-- Header start here  -->
+    <header class="bg-amber-100">
+        <nav class="p-4">
+            <div class="container mx-auto flex flex-col md:flex-row  justify-between items-center text-black-100">
+                <!-- Brand/Logo -->
+                <a href="#" class="text-xl font-bold">
+                    <img class="h-24 w-full" src="./Images/icons/logo.png" alt="">
+                </a>
+                <!-- Navbar links -->
+                <ul class="flex space-x-4 text-2xl">
+                    <li><a href="#" class="hover:text-cyan-700">Home</a></li>
+                    <li><a href="#" class="hover:text-cyan-700">About</a></li>
+                    <li><a href="#" class="hover:text-cyan-700">Services</a></li>
+                    <li><a href="#" class="hover:text-cyan-700">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="container mx-auto flex justify-between items-center">
+            <div class="p-10">
+                <h1 class="text-6xl mt-3">
+                    <span class="text-teal-400">Embrace the Chill in Style:</span> <br>
+                    Discover Your Winter Wardrobe Wonderland!
+                </h1>
+                <p class="mt-3">
+                    Embrace the chill in style this winter with our exclusive range of jackets. Crafted for both warmth and fashion, our jackets offer the perfect combination of comfort and trendiness. Elevate your winter wardrobe and make a statement wherever you go with our carefully curated selection.
+                </p>
+                <button class="p-4 text-xl bg-gradient-to-r from-sky-500 to-indigo-500 rounded mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Buy Now
+                </button>
+            </div>
+            <div>
+                <figure>
+                    <img src="Images/Model_2.png" alt="" class="model-size">
+                </figure>
+            </div>
+        </section>
+    </header>
+    <!-- Header END here  -->
+
+    <!-- Main start here  -->
+    <main class="my-5 py-12">
+        <!-- Men Collection -->
+        <section class="container mx-auto ">
+            <h3 class="text-4xl">Man Collection</h3>
+            <div class="grid grid-cols-3 gap-7 rounded md:grid-cols-3 sm:grid-cols-1">
+                <!-- jacket-1  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/J1.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Arctic Expedition Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Conquer the cold with this rugged and insulated jacket, designed for extreme winter adventures.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$89.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-2  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/J2.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Urban Explorer Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Navigate city streets in style with this versatile jacket, blending functionality with urban sophistication.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$69.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-3  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/J3.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Alpine Peak Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Reach new heights in warmth and style with this sleek and performance-driven jacket, perfect for mountain explorations.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$99.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-4  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-14" src="./Images/J4.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Heritage Classic Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Timeless elegance meets modern comfort in this heritage-inspired jacket, designed for the discerning gentleman.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$109.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-5  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/j5.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Frostbite Defender Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Brave the elements with confidence in this durable and weather-resistant jacket, engineered for ultimate protection.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$299.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-6  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/J6.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Cosy Cabin Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Embrace the cozy vibes with this plush and snug jacket, ideal for weekends by the fire or brisk walks in the countryside.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$289.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Women Collection -->
+        <section class="container mx-auto ">
+            <h3 class="text-4xl">Women Collection</h3>
+            <div class="grid grid-cols-3 gap-7 rounded md:grid-cols-3 sm:grid-cols-1">
+                <!-- jacket-1  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/jacket-1.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Arctic Bliss Coat</div>
+                        <p class="text-gray-700 text-base">
+                            Wrap yourself in luxury with this ultra-soft faux fur coat, designed to keep you cozy and chic all winter long.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$169.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-2  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/jacket-2.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Frosty Elegance Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Stay effortlessly stylish in the cold with this sleek and sophisticated quilted jacket, perfect for any occasion.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$399.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-3  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/jacket-3.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Snowfall Dreams Parka</div>
+                        <p class="text-gray-700 text-base">
+                            Brave the elements in style with this insulated parka, featuring a faux fur hood for a touch of elegance.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$199.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-4  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/jacket-4.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Ice Queen Puffer</div>
+                        <p class="text-gray-700 text-base">
+                            Rule the winter streets in this statement puffer jacket, crafted with a shimmering metallic finish for a glamorous edge.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$299.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-5  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/jacket-5.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Aurora Borealis Bomber</div>
+                        <p class="text-gray-700 text-base">
+                            Add a pop of color to your winter wardrobe with this vibrant bomber jacket, featuring eye-catching prints inspired by the northern lights.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$89.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-6  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/jacket-6.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Glacier Glamour Trench</div>
+                        <p class="text-gray-700 text-base">
+                            Command attention with this timeless trench coat, tailored with faux leather accents for a modern twist on a classic silhouette.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$199.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Baby Collection -->
+        <section class="container mx-auto ">
+            <h3 class="text-4xl">Baby Collection</h3>
+            <div class="grid grid-cols-3 gap-7 rounded md:grid-cols-3 sm:grid-cols-1">
+                <!-- jacket-1  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/baby-1.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">SnuggleBug Sherpa</div>
+                        <p class="text-gray-700 text-base">
+                            Wrap your little one in cozy warmth with our SnuggleBug Sherpa jacket - perfect for cuddly adventures on chilly days!
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$190.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-2  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/baby-2.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Dreamy Cloud Puffer</div>
+                        <p class="text-gray-700 text-base">
+                            Keep your baby snug as a bug in our Dreamy Cloud Puffer jacket - a fluffy, lightweight option for frosty mornings and windy strolls.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$290.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-3  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/baby-3.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Little Explorer Parka</div>
+                        <p class="text-gray-700 text-base">
+                            Adventure awaits with our Little Explorer Parka - a durable and stylish jacket to keep your baby warm during outdoor escapades.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$159.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-4  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/baby-4.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Sweet Pea Knit Cardigan</div>
+                        <p class="text-gray-700 text-base">
+                            Add a touch of sweetness to your baby's wardrobe with our Sweet Pea Knit Cardigan - a soft and cuddly layer for indoor snuggles or playtime outings.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$99.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-5  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/baby-5.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Starlight Fleece Jacket</div>
+                        <p class="text-gray-700 text-base">
+                            Shine bright in our Starlight Fleece Jacket - a cozy companion for starlit nights and chilly evenings.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$249.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket-6  -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img class="w-full h-96 p-10" src="./Images/baby-6.png" alt="Placeholder image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Sunshine Quilted Vest</div>
+                        <p class="text-gray-700 text-base">
+                            Bring a ray of sunshine to gloomy days with our Sunshine Quilted Vest - a versatile layering piece to keep your baby warm and stylish on the go.
+                        </p>
+                        <p class="text-gray-700 font-bold mt-2">$239.99</p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Main END here  -->
+    <!-- cards starts -->
+    <section>
+        <section class="flex flex-wrap items-center">
+            <!-- Left Side - Cards -->
+            <div class="w-full md:w-2/3 p-4">
+                <div class="flex flex-col justify-between h-full">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md flex items-center mb-4 p-4">
+                        <img src="./Images/icons/box.png" alt="Card 1 Image"
+                            class="w-24 h-24 object-cover rounded-full mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Free Exchange</h3>
+                            <p class="text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                                euismod bibendum laoreet.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md flex items-center mb-4 p-4">
+                        <img src="./Images/icons/house.png" alt="Card 2 Image"
+                            class="w-24 h-24 object-cover rounded-full mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">
+                               Find the perfect Fit
+                            </h3>
+                            <p class="text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                                euismod bibendum laoreet.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md flex items-center p-4">
+                        <img src="./Images/icons/question.png" alt="Card 3 Image"
+                            class="w-24 h-24 object-cover rounded-full mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">
+                                Contact Our seller
+                            </h3>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                                euismod bibendum laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="w-full md:w-1/3 p-4">
+                <dotlottie-player src="https://lottie.host/df4ca732-ff99-4495-9285-d0cf1e704f38/rtvu8k0MtB.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                    autoplay></dotlottie-player>
+            </div>
+        </section>
+
+    </section>
+    <!-- cards end -->
+
+
+    <!-- contact us banner start -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-semibold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:outline-none"
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-semibold mb-2">Your Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:outline-none"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:outline-none"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-200">Send
+                            Message</button>
+                    </form>
+                </div>
+                <div>
+                    <div class="bg-white p-2 rounded-md shadow-lg">
+                        <div class="mb-4">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31715.07486304672!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3AYOUR_PLACE_NAME!2sYOUR_PLACE_NAME!5e0!3m2!1sen!2s!4v1644482102854!5m2!1sen!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us banner end -->
+
+    <!-- Footer start here  -->
+    <footer class="bg-amber-100 text-black py-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-center md:text-left">
+                <p class="text-lg font-semibold">Chicify</p>
+                <p>123 Street Address</p>
+                <p>City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+            <div>
+                <p class="text-lg font-semibold">Follow Us</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="">
+                        <i class="fa-brands fa-facebook text-4xl fa-bounce" style="color: #4b4b4b;"></i>
+                    </a>
+                    <a href="#" class="">
+                        <i class="fa-brands fa-instagram  text-4xl fa-spin fa-spin-reverse" style="color: #4b4b4b"></i>
+                    </a>
+                    <a href="#" class="">
+                        <i class="fa-brands fa-whatsapp text-4xl fa-shake" style="color: #4b4b4b;"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END here  -->
+</body>
+
+</html>
